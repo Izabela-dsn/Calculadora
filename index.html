@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header><h1>Calculadora</h1></header>
+        <form action="#" name="calcular">
+          <p data-show-numbers></p>
+
+          <div class="operations-numbers">
+            <div class="first-row">
+              <input
+                type="button"
+                value="C"
+                class="txt"
+                onclick="location.reload()"
+              />
+
+              <!-- 
+                <input type="button" value="+/-" class="txt" name="btn+ou-" />
+              -->
+
+              <!-- 
+
+              <input
+                type="button"
+                value="%"
+                class="txt"
+                onclick="getElements(value)"
+                name="btnPorcentagem"
+                onclick="getElements(value)"
+              />
+              -->
+
+              <input
+                type="button"
+                value="DEL"
+                class="txt"
+                onclick="deleteElements()"
+                name="btnDel"
+              />
+            </div>
+
+            <div class="second-row">
+              <input
+                type="button"
+                value="7"
+                class="number"
+                name="btn7"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="8"
+                class="number"
+                name="btn8"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="9"
+                class="number"
+                name="btn9"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="/"
+                class="txt"
+                onclick="getElements(value)"
+                name="btnDivisao"
+              />
+            </div>
+
+            <div class="third-row">
+              <input
+                type="button"
+                value="4"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="5"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="6"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="*"
+                class="txt"
+                onclick="getElements(value)"
+              />
+            </div>
+
+            <div class="fourth-row">
+              <input
+                type="button"
+                value="1"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="2"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="3"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="-"
+                class="txt"
+                onclick="getElements(value)"
+              />
+            </div>
+
+            <div class="five-row">
+              <input
+                type="button"
+                value="0"
+                class="number"
+                onclick="getElements(value)"
+              />
+              <input
+                type="button"
+                value="."
+                class="txt"
+                onclick="getElements(value)"
+              />
+              <input type="button" value="=" class="txt" onclick="calculo()" />
+              <input
+                type="button"
+                value="+"
+                class="txt"
+                onclick="getElements(value)"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

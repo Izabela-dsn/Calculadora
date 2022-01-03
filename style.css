@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+main {
+  background: #2091c399;
+  height: 100vh;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  background-color: white;
+  box-shadow: 10px 10px 4px 10px #2091c3;
+
+  border-radius: 1rem;
+}
+
+header {
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-bottom: 0.1rem solid #2091c3;
+}
+
+header h1 {
+  font: 300 28px Roboto;
+  color: #2091c3;
+}
+
+form p {
+  text-align: right;
+  padding: 3rem 0 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 20px;
+
+  border-bottom: 0.1rem solid #2091c3;
+}
+
+input[type='button'] {
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+input[type='button']:hover {
+  background: #2091c399;
+  color: white;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.five-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+}
+
+.first-row input {
+  font-size: 12px;
+  padding: 1rem 3.8rem;
+}
+
+.second-row .txt:nth-child(4),
+.third-row .txt:nth-child(4),
+.fourth-row .txt:nth-child(4),
+.five-row .txt:nth-child(4) {
+  background: #1f94ca99;
+  color: white;
+  font-weight: bold;
+}
+
+.five-row .txt:nth-child(3) {
+  background: #2091c3;
+  color: white;
+}
+.five-row .txt:nth-child(2) {
+  font-weight: bold;
+}
